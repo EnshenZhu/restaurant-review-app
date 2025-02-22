@@ -1,4 +1,5 @@
 const db_password = "CMZ19962011ca"
+const { connect } = require('http2');
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://winniecmzzhu:" + db_password + "@cluster0.ocvnp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
@@ -26,3 +27,5 @@ async function run() {
   }
 }
 run().catch(console.dir);
+
+module.exports = client;
