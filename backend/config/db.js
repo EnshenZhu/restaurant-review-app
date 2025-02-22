@@ -1,15 +1,8 @@
-const express = require("express");
-const cors = require("cors");
-
 const db_password = "CMZ19962011ca"
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://winniecmzzhu:" + db_password + "@cluster0.ocvnp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
-require("dotenv").config();
-
-const app = express();
-app.use(cors());
-app.use(express.json());
+require('dotenv').config();
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -19,6 +12,7 @@ const client = new MongoClient(uri, {
     deprecationErrors: true,
   }
 });
+
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
@@ -32,10 +26,3 @@ async function run() {
   }
 }
 run().catch(console.dir);
-
-// Routes
-const menuRoutes = require("./routes/menuRoutes");
-app.use("/api/menu", menuRoutes);
-
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
