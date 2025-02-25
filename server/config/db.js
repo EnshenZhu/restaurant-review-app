@@ -3,8 +3,12 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 
 require('dotenv').config();
 
+//Access the environment variables
+const mongo_username = process.env.MONGO_USERNAME;
+const mongo_password = process.env.MONGO_PASSWORD;
+
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
-const client = new MongoClient(process.env.MONGO_URL, {
+const client = new MongoClient(`mongodb+srv://${mongo_username}:${mongo_password}@cluster0.ocvnp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`, {
   serverApi: {
     version: ServerApiVersion.v1,
     strict: true,
