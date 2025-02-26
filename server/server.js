@@ -20,6 +20,7 @@ const reviewRoutes = require('./routes/reviewRoutes');
 app.use('/api/restaurants', restaurantRoutes);
 app.use('/api/menus', menuRoutes);
 app.use('/api/reviews', reviewRoutes);
+app.use('/uploads', express.static('uploads'));
 
 // Start Server
 const PORT = process.env.PORT || 5000;
