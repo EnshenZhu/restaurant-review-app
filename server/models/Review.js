@@ -6,7 +6,7 @@ const ReviewSchema = new mongoose.Schema({
         ref: 'Menu',
         required: true,
     },
-    restaurantBelonged: {
+    restaurant: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Restaurant'
     },
