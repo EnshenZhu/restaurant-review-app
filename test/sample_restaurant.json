@@ -1,0 +1,37 @@
+[
+    {
+        "name": "The Gourmet Kitchen",
+        "address": "123 Elm Street, Springfield, USA",
+        "latitude": 39.1234,
+        "longitude": -77.4567,
+        "rating": 9
+    },
+    {
+        "name": "Ocean Breeze Diner",
+        "address": "45 Seaside Avenue, Miami, USA",
+        "latitude": 25.7829,
+        "longitude": -80.1400,
+        "rating": 7
+    },
+    {
+        "name": "Mountain View Eatery",
+        "address": "789 Alpine Road, Denver, USA",
+        "latitude": 39.7392,
+        "longitude": -104.9903,
+        "rating": 8
+    },
+    {
+        "name": "Tasty Thai Corner",
+        "address": "321 Bamboo Lane, Bangkok, Thailand",
+        "latitude": 13.7563,
+        "longitude": 100.5018,
+        "rating": 6
+    },
+    {
+        "name": "La Bella Italia",
+        "address": "10 Piazza del Colosseo, Rome, Italy",
+        "latitude": 41.8902,
+        "longitude": 12.4922,
+        "rating": 10
+    }
+]
